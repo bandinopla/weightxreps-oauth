@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+      "outDir": "./dist",           // Output directory
+      "declaration": true,          // Generate .d.ts files
+      "declarationDir": "./dist",   // Output directory for .d.ts files
+      "emitDeclarationOnly": true,  // Only emit .d.ts files on a separate run
+      "module": "ESNext",           // Use ESNext for module resolution
+      "target": "ESNext",           // Target modern JS
+      "moduleResolution": "Node",
+      "esModuleInterop": true,      // Enable import/export interop
+      "skipLibCheck": true,         // Skip type checks on library files
+      "sourceMap": true,            // Enable source maps
+      "strict": false                // Enable strict mode
+    },
+    "include": ["src/**/*"],        // Include source files
+    "exclude": ["node_modules", "dist"] // Exclude output folders
+  }
+  
