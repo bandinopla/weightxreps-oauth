@@ -11,7 +11,8 @@
     "dev": "vite",
     "build": "vite build && tsc --emitDeclarationOnly",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "publish":"npm run build && npm publish"
   }, 
   "main": "dist/weightxreps-oauth.cjs.js",  
   "module": "dist/weightxreps-oauth.es.js",       

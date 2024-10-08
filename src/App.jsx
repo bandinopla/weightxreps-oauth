@@ -5,7 +5,7 @@ import { useWeightxrepsOAuth } from './oauth/useWeightxrepsOAuth'
 
 function App() {
   const [accessToken, setAccessToken] = useState("---")
-  const { login, user, getAuthHeaders, loading, error, logout } = useWeightxrepsOAuth("dev.foo.com",{ endpoint:"http://localhost:4000/api/auth", scope:"email,jwrite" })
+  const { login, user, getAuthHeaders, loading, error, logout } = useWeightxrepsOAuth("dev.foo.com",{ endpoint:import.meta.env.VITE_WERIGHTXREPS_OAUTH, scope:"email,jwrite" })
  
 
   const go = ()=>{ 

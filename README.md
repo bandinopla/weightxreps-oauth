@@ -43,7 +43,7 @@ let client = OAuthClient.get( client_id, config_options )
 ### SIGNALS
 | signal | description |
 | --- | --- |
-| `onError.listen((err:string)=>void, callNow = false):UnlistenFunc` | Signal to get the string error that happened or undefined. `callNow` = true will call the listener with the current value right now.|
+| `onError.listen((err:string)=>void, callNow = false):UnlistenFunc` | Signal to get the string error that happened or undefined. `callNow` = true will call the listener with the current value right now. See list of possible errors at the bottom...|
 | `onLoading.listen((loading:boolean)=>void, callNow = false):UnlistenFunc`| Signal to know if the client is loading something or not. `callNow` = true will call the listener with the current value right now.|
 | `onLogged.listen((user:{id:number, uname:string})=>void, callNow = false):UnlistenFunc`| Signal to know when the user changes. Can be `undefined` if not logged. `callNow` = true will call the listener with the current value right now.|
 
@@ -108,3 +108,10 @@ export default App
 | `error?` | `String` in case of an error |
 | `logout` | See `client.logout` above |
 | `loading` | `boolean` true if the client is busy |
+
+
+### ERRORS
+- `"user_declined"` - The user declined to grant our app authorization
+- `"user_canceled"` - User closed the popup (if you used `asPopup:true`)
+- `"must_login"` - A manual login by the user is necesary. Example: the refresh token is no longer valid or something... 
+- `<string>` - Anything else will be a string describind the error...
