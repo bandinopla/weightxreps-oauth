@@ -1,8 +1,9 @@
 # `weightxreps.net` OAuth module
 
-Module to let your javascript app get user's credentials of [weightxreps.net](https://weightxreps.net/). It only focus on obtaining a valid access token, you are then responsible of adding it to your request's headers when connecting to the GraphQL endpoint.
+Module to let your javascript app get user's credentials of [weightxreps.net](https://weightxreps.net/). It only focus on obtaining a valid access token, you are then responsible of adding it to your request's headers when connecting to the GraphQL endpoint `/api/graphql`
 
-### @ See [OAuth2 weightxreps documentation](https://github.com/bandinopla/weightxreps-server/blob/main/OAUTH.md)
+### @ See [OAuth2 weightxreps documentation](https://github.com/bandinopla/weightxreps-server/blob/main/docs/OAUTH.md)
+Read that to know how to create a service to connect your app with weightxreps.net.
 <br/>
 
 

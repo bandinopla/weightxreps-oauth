@@ -1,6 +1,6 @@
 {
   "name": "weightxreps-oauth", 
-  "version": "1.0.0",
+  "version": "1.0.5",
   "type": "module",
   "author": {
     "name": "Bandinopla",
@@ -11,8 +11,7 @@
     "dev": "vite",
     "build": "vite build && tsc --emitDeclarationOnly",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "publish":"npm run build && npm publish"
+    "preview": "vite preview" 
   }, 
   "main": "dist/weightxreps-oauth.cjs.js",  
   "module": "dist/weightxreps-oauth.es.js",       
